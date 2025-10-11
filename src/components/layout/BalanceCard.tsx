@@ -34,12 +34,12 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             onPress={() => console.log("Accounts button pressed")}
             style={styles.button}
           />
-        </View>
-        <View style={styles.buttonsRow}>
-          <IconButton icon="plus" label="Add money" />
-          <IconButton icon="bizum" label="Bizum" />
-          <IconButton icon="shuffle-variant" label="Move" />
-          <IconButton icon="dots-horizontal" label="More" />
+          <View style={styles.buttonsRow}>
+            <IconButton icon="plus" label="Add money" />
+            <IconButton icon="bizum" label="Bizum" />
+            <IconButton icon="shuffle-variant" label="Move" />
+            <IconButton icon="dots-horizontal" label="More" />
+          </View>
         </View>
         <LinearGradient
           colors={["transparent", colorPalette.backgroundPrimary]}
@@ -98,8 +98,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     width: "100%",
+    marginTop: 50,
     paddingHorizontal: 15,
-    marginTop: 20,
     zIndex: 1,
   },
 });
