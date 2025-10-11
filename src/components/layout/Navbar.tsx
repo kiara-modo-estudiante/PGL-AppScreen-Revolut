@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import IconWithLabel from "../ui/IconWithLabel";
+import { colorPalette } from "../../theme/ColorPalette";
 
 const Navbar = () => {
   const [selectedIcon, setSelectedIcon] = useState<string>("home"); // Estado global para el ícono seleccionado
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
     justifyContent: "space-around",
-    backgroundColor: "#001f3f",
+    backgroundColor: colorPalette.backgroundSecondary,
     paddingTop: 10,
     paddingBottom: 40,
     paddingHorizontal: 5,
