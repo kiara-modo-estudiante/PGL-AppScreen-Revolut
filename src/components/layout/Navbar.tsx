@@ -4,7 +4,7 @@ import IconWithLabel from "../ui/IconWithLabel";
 import { colorPalette } from "../../theme/ColorPalette";
 
 const Navbar = () => {
-  const [selectedIcon, setSelectedIcon] = useState<string>("home"); // Estado global para el ícono seleccionado
+  const [selectedIcon, setSelectedIcon] = useState<string>("revolut"); // Página principal seleccionada por defecto
 
   const handleIconPress = (name: string) => {
     setSelectedIcon(name);
@@ -13,10 +13,10 @@ const Navbar = () => {
   return (
     <View style={styles.container}>
       <IconWithLabel
-        name="home"
+        name="revolut"
         iconLabel="Home"
-        isSelected={selectedIcon === "home"}
-        onPress={() => handleIconPress("home")}
+        isSelected={selectedIcon === "revolut"}
+        onPress={() => handleIconPress("revolut")}
       />
       <IconWithLabel
         name="chart-line"

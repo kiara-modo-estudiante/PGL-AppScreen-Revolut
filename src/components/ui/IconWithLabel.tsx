@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import React from "react";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import Icon from "../common/Icon";
 import { colorPalette } from "../../theme/ColorPalette";
 import { IconWithLabelProps } from "../../types/IconTypes";
+import { RevolutIcon } from "../common/RevolutIcon";
 
 const IconWithLabel: React.FC<IconWithLabelProps> = ({
   name,
@@ -12,20 +13,20 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
   isSelected = false,
   onPress,
 }) => {
+  const dynamicColor = isSelected ? colorPalette.iconActive : color;
+
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Icon
-        name={name}
-        size={size}
-        color={isSelected ? colorPalette.iconActive : color}
-      />
+      {name === "revolut" ? (
+        <RevolutIcon size={size} color={dynamicColor} />
+      ) : (
+        <Icon name={name} size={size} color={dynamicColor} />
+      )}
       <Text
         style={[
           styles.iconLabel,
           {
-            color: isSelected
-              ? colorPalette.iconActive
-              : colorPalette.iconDefault,
+            color: dynamicColor,
           },
         ]}
       >
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
   iconLabel: {
     textAlign: "center",
     fontSize: 13,
-    fontWeight: 600,
+    fontWeight: "600",
     paddingTop: 2,
   },
 });
