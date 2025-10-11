@@ -3,6 +3,14 @@ import { View, StyleSheet } from "react-native";
 import IconWithLabel from "../ui/IconWithLabel";
 import { colorPalette } from "../../theme/ColorPalette";
 
+const icons = [
+  { name: "revolut", label: "Home" },
+  { name: "chart-line", label: "Invest" },
+  { name: "swap-horizontal", label: "Payments" },
+  { name: "bitcoin", label: "Crypto" },
+  { name: "hexagon", label: "RevPoints" },
+];
+
 const Navbar = () => {
   const [selectedIcon, setSelectedIcon] = useState<string>("revolut"); // Página principal seleccionada por defecto
 
@@ -12,36 +20,15 @@ const Navbar = () => {
 
   return (
     <View style={styles.container}>
-      <IconWithLabel
-        name="revolut"
-        iconLabel="Home"
-        isSelected={selectedIcon === "revolut"}
-        onPress={() => handleIconPress("revolut")}
-      />
-      <IconWithLabel
-        name="chart-line"
-        iconLabel="Invest"
-        isSelected={selectedIcon === "chart-line"}
-        onPress={() => handleIconPress("chart-line")}
-      />
-      <IconWithLabel
-        name="swap-horizontal"
-        iconLabel="Payments"
-        isSelected={selectedIcon === "swap-horizontal"}
-        onPress={() => handleIconPress("swap-horizontal")}
-      />
-      <IconWithLabel
-        name="bitcoin"
-        iconLabel="Crypto"
-        isSelected={selectedIcon === "bitcoin"}
-        onPress={() => handleIconPress("bitcoin")}
-      />
-      <IconWithLabel
-        name="hexagon"
-        iconLabel="RevPoints"
-        isSelected={selectedIcon === "hexagon"}
-        onPress={() => handleIconPress("hexagon")}
-      />
+      {icons.map(({ name, label }) => (
+        <IconWithLabel
+          key={name}
+          name={name}
+          iconLabel={label}
+          isSelected={selectedIcon === name}
+          onPress={() => handleIconPress(name)}
+        />
+      ))}
     </View>
   );
 };
