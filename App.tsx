@@ -1,19 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import Navbar from "./src/components/layout/Navbar";
 import Header from "./src/components/layout/Header";
-import BalanceCard from "./src/components/layout/BalanceCard";
 import { colorPalette } from "./src/theme/ColorPalette";
+import HomeScreen from "./src/screens/HomeScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Header></Header>
-      <BalanceCard
-        backgroundImage={require("./src/assets/images/backgrounds/default.jpg")}
-        type="Savings Account"
-        currency="USD"
-        balance={145.66}
-      />
+      <HomeScreen></HomeScreen>
       <Navbar></Navbar>
     </View>
   );
