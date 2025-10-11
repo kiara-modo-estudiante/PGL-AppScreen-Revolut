@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     position: "absolute",
     top: 0,
+    zIndex: 99,
   },
   searchBar: {
     width: "80%",
