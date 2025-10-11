@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { colorPalette } from "../../theme/ColorPalette";
 import { IconWithLabelProps } from "../../types/IconTypes";
-import { renderIcon } from "../common/IconRegistry";
+import Icon from "../common/Icon";
 
 const IconWithLabel: React.FC<IconWithLabelProps> = ({
   name,
@@ -16,7 +16,7 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      {renderIcon(name, size, dynamicColor)}
+      <Icon name={name} size={size} color={dynamicColor} />
       <Text style={[styles.iconLabel, { color: dynamicColor }]}>
         {iconLabel}
       </Text>

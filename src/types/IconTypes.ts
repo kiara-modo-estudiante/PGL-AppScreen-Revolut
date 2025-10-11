@@ -1,7 +1,7 @@
 // Base de iconos
 export interface SharedIconProps {
-  size?: number;
-  color?: string;
+  size: number;
+  color: string;
 }
 
 // Iconos nombrados
