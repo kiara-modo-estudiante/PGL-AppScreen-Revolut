@@ -8,7 +8,7 @@ const SearchBar: React.FC = () => {
     <View style={styles.container}>
       <MaterialCommunityIcons
         name="magnify"
-        size={24}
+        size={30}
         color={colorPalette.iconActive}
         style={styles.icon}
       />
@@ -28,10 +28,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: colorPalette.buttonPrimary,
-    borderRadius: 16,
+    borderRadius: 50,
     paddingHorizontal: 10,
     paddingVertical: 6,
     marginHorizontal: 10,
+    width: "50%",
   },
   icon: {
     marginRight: 6,
