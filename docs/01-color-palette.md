@@ -16,17 +16,17 @@ Esta acción fue repetida con todos los colores mostrados en la pantalla, obteni
 
 Aquí muestro dichos colores seleccionados a través de esta aplicación, así como su denominación en este proyecto, su nombre común y su valor RGB:
 
-| Imagen del Color                                       | Nombre Común    | Denominación en la App | Valor RGB          |
-| ------------------------------------------------------ | --------------- | ---------------------- | ------------------ |
-| ![Color](/docs/images/colors/primary.png)              | Azul Eléctrico  | primary                | rgb(33, 115, 255)  |
-| ![Color](/docs/images/colors/secondary.png)            | Azul Marino     | secondary              | rgb(27, 33, 49)    |
-| ![Color](/docs/images/colors/background-primary.png)   | Azul Oscuro     | backgroundPrimary      | rgb(2, 8, 24)      |
-| ![Color](/docs/images/colors/background-secondary.png) | Azul Medianoche | backgroundSecondary    | rgb(10, 15, 35)    |
-| ![Color](/docs/images/colors/text-primary.png)         | Blanco          | textPrimary            | rgb(255, 255, 255) |
-| ![Color](/docs/images/colors/text-secondary.png)       | Gris Claro      | textSecondary          | rgb(160, 160, 170) |
-| ![Color](/docs/images/colors/icon-default.png)         | Gris Plateado   | iconDefault            | rgb(181, 181, 187) |
-| ![Color](/docs/images/colors/icon-active.png)          | Blanco          | iconActive             | rgb(255, 255, 255) |
-| ![Color](/docs/images/colors/button-primary.png)       | Azul Acero      | buttonPrimary          | rgb(63, 83, 127)   |
-| ![Color](/docs/images/colors/button-hover.png)         | Azul Cobalto    | buttonHover            | rgb(75, 100, 150)  |
-| ![Color](/docs/images/colors/money-gain.png)           | Verde Esmeralda | moneyGain              | rgb(90, 183, 154)  |
-| ![Color](/docs/images/colors/money-loss.png)           | Rojo Carmesí    | moneyLoss              | rgb(204, 43, 62)   |
+| Imagen del Color                                       | Nombre Común    | Denominación en la App | Valor RGB               |
+| ------------------------------------------------------ | --------------- | ---------------------- | ----------------------- |
+| ![Color](/docs/images/colors/primary.png)              | Azul Eléctrico  | primary                | rgb(33, 115, 255)       |
+| ![Color](/docs/images/colors/secondary.png)            | Azul Marino     | secondary              | rgb(27, 33, 49)         |
+| ![Color](/docs/images/colors/background-primary.png)   | Azul Oscuro     | backgroundPrimary      | rgb(2, 8, 24)           |
+| ![Color](/docs/images/colors/background-secondary.png) | Azul Medianoche | backgroundSecondary    | rgb(10, 15, 35)         |
+| ![Color](/docs/images/colors/text-primary.png)         | Blanco          | textPrimary            | rgb(255, 255, 255)      |
+| ![Color](/docs/images/colors/text-secondary.png)       | Gris Claro      | textSecondary          | rgb(160, 160, 170)      |
+| ![Color](/docs/images/colors/icon-default.png)         | Gris Plateado   | iconDefault            | rgb(181, 181, 187)      |
+| ![Color](/docs/images/colors/icon-active.png)          | Blanco          | iconActive             | rgb(255, 255, 255)      |
+| ![Color](/docs/images/colors/button-primary.png)       | Azul Acero      | buttonPrimary          | rgba(63, 83, 127, 0.60) |
+| ![Color](/docs/images/colors/button-hover.png)         | Azul Cobalto    | buttonHover            | rgb(75, 100, 150)       |
+| ![Color](/docs/images/colors/money-gain.png)           | Verde Esmeralda | moneyGain              | rgb(90, 183, 154)       |
+| ![Color](/docs/images/colors/money-loss.png)           | Rojo Carmesí    | moneyLoss              | rgb(204, 43, 62)        |

@@ -16,7 +16,7 @@ export const colorPalette = {
   iconActive: "rgb(255, 255, 255)",
 
   // Botones
-  buttonPrimary: "rgb(63, 83, 127)",
+  buttonPrimary: "rgba(63, 83, 127, 0.60)",
   buttonHover: "rgb(75, 100, 150)",
 
   // Indicadores financieros
