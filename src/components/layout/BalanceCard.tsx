@@ -12,6 +12,7 @@ import { colorPalette } from "../../theme/ColorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
 import { formatBalance } from "../../utils/formatBalance";
+import IconButton from "../ui/IconButton";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -33,6 +34,12 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             onPress={() => console.log("Accounts button pressed")}
             style={styles.button}
           />
+        </View>
+        <View style={styles.buttonsRow}>
+          <IconButton icon="plus" label="Add money" />
+          <IconButton icon="bizum" label="Bizum" />
+          <IconButton icon="shuffle-variant" label="Move" />
+          <IconButton icon="dots-horizontal" label="More" />
         </View>
         <LinearGradient
           colors={["transparent", colorPalette.backgroundPrimary]}
@@ -85,5 +92,14 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "30%",
+  },
+  buttonsRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "100%",
+    paddingHorizontal: 15,
+    marginTop: 20,
+    zIndex: 1,
   },
 });
