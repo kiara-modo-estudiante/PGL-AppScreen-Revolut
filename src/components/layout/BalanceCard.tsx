@@ -11,6 +11,7 @@ import { BalanceCardProps } from "../../types/AccountBalanceTypes";
 import { colorPalette } from "../../theme/ColorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
+import { formatBalance } from "../../utils/formatBalance";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -26,7 +27,7 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
           <Text style={styles.description}>
             {type} · {currency}
           </Text>
-          <Text style={styles.balance}>{balance}</Text>
+          <Text style={styles.balance}>{formatBalance(currency, balance)}</Text>
           <TextButton
             title="Accounts"
             onPress={() => console.log("Accounts button pressed")}
