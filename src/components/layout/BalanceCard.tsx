@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { BalanceCardProps } from "../../types/AccountBalanceTypes";
 import { colorPalette } from "../../theme/ColorPalette";
+import { LinearGradient } from "expo-linear-gradient";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -18,17 +19,23 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
   balance,
 }) => {
   return (
-    <ImageBackground source={backgroundImage} style={[styles.container, style]}>
-      <View style={styles.infoContainer}>
-        <Text style={styles.description}>
-          {type} · {currency}
-        </Text>
-        <Text style={styles.balance}>{balance}</Text>
-        <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Accounts</Text>
-        </Pressable>
-      </View>
-    </ImageBackground>
+    <View style={[styles.container, style]}>
+      <ImageBackground source={backgroundImage} style={styles.imageBackground}>
+        <View style={styles.infoContainer}>
+          <Text style={styles.description}>
+            {type} · {currency}
+          </Text>
+          <Text style={styles.balance}>{balance}</Text>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>Accounts</Text>
+          </Pressable>
+        </View>
+        <LinearGradient
+          colors={["transparent", colorPalette.backgroundPrimary]} // Degradado más oscuro
+          style={styles.gradient}
+        />
+      </ImageBackground>
+    </View>
   );
 };
 
@@ -37,21 +44,28 @@ export default BalanceCard;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: "70%",
+    height: "55%",
     justifyContent: "center",
     alignItems: "center",
     position: "absolute",
     top: 0,
   },
-  gradient: {
-    flex: 1,
+  imageBackground: {
     width: "100%",
+    height: "100%",
+  },
+  gradient: {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    height: "35%",
     justifyContent: "flex-end",
   },
   infoContainer: {
     flex: 1,
     position: "relative",
     top: 200,
+    alignItems: "center",
   },
   description: {
     textAlign: "center",
@@ -67,14 +81,10 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: colorPalette.buttonPrimary,
-    paddingHorizontal: 30,
     paddingVertical: 10,
     borderRadius: 25,
     marginTop: 10,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
+    width: "30%",
   },
   buttonText: {
     color: colorPalette.textPrimary,
