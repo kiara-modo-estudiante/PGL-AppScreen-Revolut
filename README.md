@@ -32,11 +32,19 @@ A continuación, se presentan dos capturas para comparar la pantalla original de
 
 ### Imagen Original
 
-![Imagen Original](/docs/images/OriginalRevolut.jpg)
+![Imagen Original](/docs/images/original-revolut.jpg)
 
 ### Resultado del Proyecto
 
 ![Resultado del Proyecto](...)
+
+## Ejercicios de la Práctica
+
+### Ejercicios de la Práctica
+
+1. Utiliza alguna herramienta para obtener el código de cada color utilizado en la aplicación y guárdalos en un fichero de TypeScript para los colores de tu aplicación.
+
+   - [01 Color Palette](./docs/01-color-palette.md)
 
 ## Autor
 
