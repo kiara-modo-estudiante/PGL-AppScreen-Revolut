@@ -10,6 +10,7 @@ import {
 import { BalanceCardProps } from "../../types/AccountBalanceTypes";
 import { colorPalette } from "../../theme/ColorPalette";
 import { LinearGradient } from "expo-linear-gradient";
+import TextButton from "../ui/TextButton";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -26,12 +27,14 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             {type} · {currency}
           </Text>
           <Text style={styles.balance}>{balance}</Text>
-          <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Accounts</Text>
-          </Pressable>
+          <TextButton
+            title="Accounts"
+            onPress={() => console.log("Accounts button pressed")}
+            style={styles.button}
+          />
         </View>
         <LinearGradient
-          colors={["transparent", colorPalette.backgroundPrimary]} // Degradado más oscuro
+          colors={["transparent", colorPalette.backgroundPrimary]}
           style={styles.gradient}
         />
       </ImageBackground>
@@ -80,16 +83,6 @@ const styles = StyleSheet.create({
     color: colorPalette.textPrimary,
   },
   button: {
-    backgroundColor: colorPalette.buttonPrimary,
-    paddingVertical: 10,
-    borderRadius: 25,
-    marginTop: 10,
     width: "30%",
-  },
-  buttonText: {
-    color: colorPalette.textPrimary,
-    fontWeight: "600",
-    fontSize: 18,
-    textAlign: "center",
   },
 });
