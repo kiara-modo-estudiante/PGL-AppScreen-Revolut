@@ -15,6 +15,7 @@ const TransactionList = () => {
           date={transaction.date}
           amount={transaction.amount}
           image={transaction.image}
+          isProfile={transaction.isProfile}
         />
       ))}
     </View>

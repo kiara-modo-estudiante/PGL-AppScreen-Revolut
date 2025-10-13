@@ -6,4 +6,5 @@ export interface Transaction {
   date: string;
   amount: string;
   image: ImageSourcePropType;
+  isProfile: boolean;
 }

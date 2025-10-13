@@ -7,6 +7,7 @@ export const transactions: Transaction[] = [
     date: "15 Aug, 11:45",
     amount: "-€3",
     image: require("../assets/images/pfp/immfly.jpg"),
+    isProfile: true,
   },
   {
     id: 2,
@@ -14,5 +15,6 @@ export const transactions: Transaction[] = [
     date: "14 Aug, 09:30",
     amount: "+€50",
     image: require("../assets/images/debit-cards/santander-card.png"),
+    isProfile: false,
   },
 ];

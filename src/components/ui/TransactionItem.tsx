@@ -8,11 +8,18 @@ const TransactionItem: React.FC<Transaction> = ({
   date,
   amount,
   image,
+  isProfile,
 }) => {
   return (
     <View style={styles.container}>
       <View style={styles.column}>
-        <Image style={styles.image} source={image} />
+        <Image
+          style={[
+            styles.image,
+            isProfile ? styles.profileImage : styles.cardImage,
+          ]}
+          source={image}
+        />
       </View>
       <View style={styles.middleColumn}>
         <Text style={styles.concept}>{concept}</Text>
@@ -30,7 +37,7 @@ export default TransactionItem;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "space-evenly",
     width: "100%",
     marginVertical: 16,
@@ -46,8 +53,13 @@ const styles = StyleSheet.create({
   image: {
     width: 50,
     height: 50,
-    borderRadius: 25,
     marginHorizontal: 0,
+  },
+  profileImage: {
+    borderRadius: 25,
+  },
+  cardImage: {
+    resizeMode: "contain",
   },
   concept: {
     fontSize: 26,
