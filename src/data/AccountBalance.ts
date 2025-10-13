@@ -1,4 +1,4 @@
-import { BalanceCardProps } from "../types/AccountBalanceTypes";
+import { BalanceCardProps } from "../types/accountBalance.types";
 
 const balanceCards: BalanceCardProps[] = [
   {

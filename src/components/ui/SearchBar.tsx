@@ -1,7 +1,7 @@
 import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { colorPalette } from "../../theme/ColorPalette";
+import { colorPalette } from "../../theme/colorPalette";
 
 const SearchBar: React.FC = () => {
   return (

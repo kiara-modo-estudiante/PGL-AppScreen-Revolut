@@ -1,7 +1,7 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
-import { colorPalette } from "../../theme/ColorPalette";
-import { TextButtonProps } from "../../types/ButtonTypes";
+import { colorPalette } from "../../theme/colorPalette";
+import { TextButtonProps } from "../../types/button.types";
 
 const TextButton: React.FC<TextButtonProps> = ({
   title,

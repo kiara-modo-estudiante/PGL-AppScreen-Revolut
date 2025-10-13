@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, View, Text, StyleSheet } from "react-native";
-import { colorPalette } from "../../theme/ColorPalette";
-import { Transaction } from "../../types/TransactionTypes";
+import { colorPalette } from "../../theme/colorPalette";
+import { Transaction } from "../../types/transaction.type";
 
 const TransactionItem: React.FC<Transaction> = ({
   concept,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import IconWithLabel from "../ui/IconWithLabel";
-import { colorPalette } from "../../theme/ColorPalette";
+import { colorPalette } from "../../theme/colorPalette";
 
 const icons = [
   { name: "revolut", label: "Home" },

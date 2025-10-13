@@ -1,8 +1,8 @@
 import React from "react";
 import { TouchableOpacity, Text, View, StyleSheet } from "react-native";
-import { IconButtonProps } from "../../types/ButtonTypes";
+import { IconButtonProps } from "../../types/button.types";
 import Icon from "../common/Icon";
-import { colorPalette } from "../../theme/ColorPalette";
+import { colorPalette } from "../../theme/colorPalette";
 
 const IconButton: React.FC<IconButtonProps> = ({
   icon,

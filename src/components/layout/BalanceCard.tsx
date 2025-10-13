@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, ImageBackground, Text } from "react-native";
-import { BalanceCardProps } from "../../types/AccountBalanceTypes";
-import { colorPalette } from "../../theme/ColorPalette";
+import { BalanceCardProps } from "../../types/accountBalance.types";
+import { colorPalette } from "../../theme/colorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
 import { formatBalanceParts } from "../../utils/formatBalance";

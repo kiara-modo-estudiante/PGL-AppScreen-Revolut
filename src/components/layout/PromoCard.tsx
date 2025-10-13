@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { colorPalette } from "../../theme/ColorPalette";
+import { colorPalette } from "../../theme/colorPalette";
 import Icon from "../common/Icon";
 
 const PromoCard = () => {
