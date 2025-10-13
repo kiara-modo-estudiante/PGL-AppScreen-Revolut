@@ -5,7 +5,6 @@ import { colorPalette } from "../../theme/ColorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
 import { formatBalanceParts } from "../../utils/formatBalance";
-import IconButton from "../ui/IconButton";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -33,12 +32,6 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             onPress={() => console.log("Accounts button pressed")}
             style={styles.button}
           />
-          <View style={styles.buttonsRow}>
-            <IconButton icon="plus" label="Add money" />
-            <IconButton icon="bizum" label="Bizum" />
-            <IconButton icon="shuffle-variant" label="Move" />
-            <IconButton icon="dots-horizontal" label="More" />
-          </View>
         </View>
         <LinearGradient
           colors={["transparent", colorPalette.backgroundPrimary]}
@@ -56,9 +49,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "55%",
     justifyContent: "center",
-    alignItems: "center",
-    position: "absolute",
-    top: 0,
   },
   imageBackground: {
     width: "100%",
@@ -73,9 +63,8 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     flex: 1,
-    position: "relative",
-    top: 200,
     alignItems: "center",
+    justifyContent: "center",
   },
   description: {
     textAlign: "center",
@@ -94,14 +83,5 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "30%",
-  },
-  buttonsRow: {
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    width: "100%",
-    marginTop: 50,
-    paddingHorizontal: 15,
-    zIndex: 1,
   },
 });

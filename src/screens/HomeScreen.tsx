@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 import BalanceCard from "../components/layout/BalanceCard";
 import { colorPalette } from "../theme/ColorPalette";
 import OfferCard from "../components/layout/OfferCard";
+import ActionRow from "../components/layout/ActionRow";
 
 const HomeScreen = () => {
   return (
@@ -13,6 +14,7 @@ const HomeScreen = () => {
         currency="USD"
         balance={145.66}
       />
+      <ActionRow />
       <OfferCard />
     </View>
   );
@@ -25,6 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colorPalette.backgroundPrimary,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
+    width: "100%",
   },
 });
