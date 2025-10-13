@@ -1,10 +1,14 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { colorPalette } from "../../theme/ColorPalette";
+import Icon from "../common/Icon";
 
 const OfferCard = () => {
   return (
     <View style={styles.container}>
+      <View style={styles.close}>
+        <Icon name="close" size={20} color={colorPalette.iconDefault} />
+      </View>
       <View style={styles.cardInfo}>
         <Text style={styles.title} numberOfLines={2} ellipsizeMode="tail">
           Invite friends, earn €50
@@ -27,9 +31,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 16,
-    margin: 20,
-    marginTop: 250,
     paddingTop: 10,
+    marginHorizontal: 12,
+  },
+  close: {
+    position: "absolute",
+    top: 10,
+    right: 10,
   },
   cardInfo: {
     flex: 1,
