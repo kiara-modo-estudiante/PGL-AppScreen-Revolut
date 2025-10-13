@@ -10,6 +10,12 @@ const TransactionItem: React.FC<Transaction> = ({
   image,
   isProfile,
 }) => {
+  const amountColor = amount.includes("-")
+    ? colorPalette.textPrimary
+    : amount.includes("+")
+    ? colorPalette.moneyGain
+    : colorPalette.textPrimary;
+
   return (
     <View style={styles.container}>
       <View style={styles.column}>
@@ -26,7 +32,7 @@ const TransactionItem: React.FC<Transaction> = ({
         <Text style={styles.date}>{date}</Text>
       </View>
       <View style={styles.column}>
-        <Text style={styles.amount}>{amount}</Text>
+        <Text style={[styles.amount, { color: amountColor }]}>{amount}</Text>
       </View>
     </View>
   );
@@ -74,7 +80,6 @@ const styles = StyleSheet.create({
   },
   amount: {
     fontSize: 26,
-    color: colorPalette.textPrimary,
     flexWrap: "wrap",
   },
 });
