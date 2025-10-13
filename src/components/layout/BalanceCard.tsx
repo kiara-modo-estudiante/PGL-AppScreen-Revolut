@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  StyleSheet,
-  View,
-  ImageBackground,
-  ViewStyle,
-  Text,
-  Pressable,
-} from "react-native";
+import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { BalanceCardProps } from "../../types/AccountBalanceTypes";
 import { colorPalette } from "../../theme/ColorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
-import { formatBalance } from "../../utils/formatBalance";
+import { formatBalanceParts } from "../../utils/formatBalance";
 import IconButton from "../ui/IconButton";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
@@ -21,6 +14,8 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
   currency,
   balance,
 }) => {
+  const { symbol, main, cents } = formatBalanceParts(currency, balance);
+
   return (
     <View style={[styles.container, style]}>
       <ImageBackground source={backgroundImage} style={styles.imageBackground}>
@@ -28,7 +23,11 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
           <Text style={styles.description}>
             {type} · {currency}
           </Text>
-          <Text style={styles.balance}>{formatBalance(currency, balance)}</Text>
+          <Text style={styles.balance}>
+            {symbol}
+            {main}
+            <Text style={styles.cents}>.{cents}</Text>
+          </Text>
           <TextButton
             title="Accounts"
             onPress={() => console.log("Accounts button pressed")}
@@ -89,6 +88,9 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontWeight: "800",
     color: colorPalette.textPrimary,
+  },
+  cents: {
+    fontSize: 35,
   },
   button: {
     width: "30%",
