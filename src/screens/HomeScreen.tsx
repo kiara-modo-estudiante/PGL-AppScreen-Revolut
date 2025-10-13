@@ -4,6 +4,7 @@ import BalanceCard from "../components/layout/BalanceCard";
 import { colorPalette } from "../theme/ColorPalette";
 import PromoCard from "../components/layout/PromoCard";
 import ActionRow from "../components/layout/ActionRow";
+import TransactionList from "../components/layout/TransactionList";
 
 const HomeScreen = () => {
   return (
@@ -16,6 +17,7 @@ const HomeScreen = () => {
       />
       <ActionRow />
       <PromoCard />
+      <TransactionList />
     </View>
   );
 };
