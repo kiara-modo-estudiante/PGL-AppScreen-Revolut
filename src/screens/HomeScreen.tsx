@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import BalanceCard from "../components/layout/BalanceCard";
 import { colorPalette } from "../theme/ColorPalette";
+import OfferCard from "../components/layout/OfferCard";
 
 const HomeScreen = () => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = () => {
         currency="USD"
         balance={145.66}
       />
+      <OfferCard />
     </View>
   );
 };
