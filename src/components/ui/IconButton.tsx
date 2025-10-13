@@ -35,6 +35,8 @@ const IconButton: React.FC<IconButtonProps> = ({
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
+    width: 70,
+    height: 70,
   },
   button: {
     justifyContent: "center",

@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   },
   buttonsRow: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-evenly",
     alignItems: "center",
     width: "100%",
     marginTop: 50,
