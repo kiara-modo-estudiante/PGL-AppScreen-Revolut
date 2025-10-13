@@ -7,8 +7,8 @@ import Icon from "../common/Icon";
 const IconWithLabel: React.FC<IconWithLabelProps> = ({
   name,
   iconLabel,
-  size = 28,
-  color = colorPalette.iconDefault,
+  size,
+  color,
   isSelected = false,
   onPress,
 }) => {

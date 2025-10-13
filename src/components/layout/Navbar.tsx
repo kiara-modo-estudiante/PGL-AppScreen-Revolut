@@ -27,6 +27,8 @@ const Navbar = () => {
           iconLabel={label}
           isSelected={selectedIcon === name}
           onPress={() => handleIconPress(name)}
+          size={28}
+          color={colorPalette.iconActive}
         />
       ))}
     </View>
