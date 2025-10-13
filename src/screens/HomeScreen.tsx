@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import BalanceCard from "../components/layout/BalanceCard";
 import { colorPalette } from "../theme/ColorPalette";
-import OfferCard from "../components/layout/OfferCard";
+import PromoCard from "../components/layout/PromoCard";
 import ActionRow from "../components/layout/ActionRow";
 
 const HomeScreen = () => {
@@ -15,7 +15,7 @@ const HomeScreen = () => {
         balance={145.66}
       />
       <ActionRow />
-      <OfferCard />
+      <PromoCard />
     </View>
   );
 };

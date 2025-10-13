@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { colorPalette } from "../../theme/ColorPalette";
 import Icon from "../common/Icon";
 
-const OfferCard = () => {
+const PromoCard = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   if (!isVisible) {
@@ -34,7 +34,7 @@ const OfferCard = () => {
   );
 };
 
-export default OfferCard;
+export default PromoCard;
 
 const styles = StyleSheet.create({
   container: {
