@@ -1,22 +1,25 @@
 import React from "react";
 import { Image, View, Text, StyleSheet } from "react-native";
 import { colorPalette } from "../../theme/ColorPalette";
+import { Transaction } from "../../types/TransactionTypes";
 
-const TransactionItem = () => {
+const TransactionItem: React.FC<Transaction> = ({
+  concept,
+  date,
+  amount,
+  image,
+}) => {
   return (
     <View style={styles.container}>
       <View style={styles.column}>
-        <Image
-          style={styles.image}
-          source={require("../../assets/images/pfp/immfly.jpg")}
-        />
+        <Image style={styles.image} source={image} />
       </View>
       <View style={styles.middleColumn}>
-        <Text style={styles.concept}>Immfly</Text>
-        <Text style={styles.date}>15 Aug, 11:45</Text>
+        <Text style={styles.concept}>{concept}</Text>
+        <Text style={styles.date}>{date}</Text>
       </View>
       <View style={styles.column}>
-        <Text style={styles.amount}>-€3</Text>
+        <Text style={styles.amount}>{amount}</Text>
       </View>
     </View>
   );
@@ -33,11 +36,11 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
   column: {
-    width: "20%",
+    width: "25%",
     alignItems: "center",
   },
   middleColumn: {
-    width: "60%",
+    width: "50%",
     flexDirection: "column",
   },
   image: {

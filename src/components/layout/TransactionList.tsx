@@ -1,15 +1,22 @@
-import { StyleSheet, Text, View } from "react-native";
-import React, { PureComponent } from "react";
+import { StyleSheet, View } from "react-native";
+import React from "react";
 import TransactionItem from "../ui/TransactionItem";
 import { colorPalette } from "../../theme/ColorPalette";
+import { transactions } from "../../data/transactions";
 
 const TransactionList = () => {
   return (
     <View style={styles.container}>
-      <TransactionItem />
-      <TransactionItem />
-      <TransactionItem />
-      <TransactionItem />
+      {transactions.map((transaction) => (
+        <TransactionItem
+          key={transaction.id}
+          id={transaction.id}
+          concept={transaction.concept}
+          date={transaction.date}
+          amount={transaction.amount}
+          image={transaction.image}
+        />
+      ))}
     </View>
   );
 };
