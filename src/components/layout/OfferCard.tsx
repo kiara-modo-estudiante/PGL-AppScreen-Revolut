@@ -1,14 +1,25 @@
-import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { colorPalette } from "../../theme/ColorPalette";
 import Icon from "../common/Icon";
 
 const OfferCard = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  if (!isVisible) {
+    return null;
+  }
   return (
     <View style={styles.container}>
-      <View style={styles.close}>
+      <TouchableOpacity
+        style={styles.close}
+        onPress={() => {
+          console.log("Closing card...");
+          setIsVisible(false);
+        }}
+      >
         <Icon name="close" size={20} color={colorPalette.iconDefault} />
-      </View>
+      </TouchableOpacity>
       <View style={styles.cardInfo}>
         <Text style={styles.title} numberOfLines={2} ellipsizeMode="tail">
           Invite friends, earn €50
@@ -38,6 +49,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 10,
     right: 10,
+    zIndex: 2,
   },
   cardInfo: {
     flex: 1,
