@@ -43,7 +43,7 @@ export default PromoCard;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colorPalette.buttonPrimary,
+    backgroundColor: colorPalette.secondary,
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 16,

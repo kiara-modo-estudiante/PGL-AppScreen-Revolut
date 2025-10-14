@@ -26,7 +26,7 @@ export default TransactionList;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colorPalette.buttonPrimary,
+    backgroundColor: colorPalette.secondary,
     flexDirection: "column",
     alignItems: "center",
     borderRadius: 16,
