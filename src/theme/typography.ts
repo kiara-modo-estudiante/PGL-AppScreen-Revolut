@@ -3,7 +3,7 @@ import { colorPalette } from "./colorPalette";
 
 export const typography = StyleSheet.create({
   primaryText: {
-    fontSize: 26,
+    fontSize: 24,
     color: colorPalette.textPrimary,
     fontWeight: "700",
     flexWrap: "wrap",
@@ -20,14 +20,14 @@ export const typography = StyleSheet.create({
     paddingTop: 2,
   },
   buttonText: {
-    fontSize: 16,
-    fontWeight: 600,
+    fontSize: 18,
+    fontWeight: 500,
     color: colorPalette.textPrimary,
     textAlign: "center",
   },
   title: {
     textAlign: "center",
-    fontSize: 50,
+    fontSize: 58,
     fontWeight: "800",
     color: colorPalette.textPrimary,
   },
