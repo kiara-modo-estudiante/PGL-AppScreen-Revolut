@@ -2,6 +2,7 @@ import React from "react";
 import { Image, View, Text, StyleSheet } from "react-native";
 import { colorPalette } from "../../theme/colorPalette";
 import { Transaction } from "../../types/transaction.types";
+import typography from "../../theme/typography";
 
 const TransactionItem: React.FC<Transaction> = ({
   concept,
@@ -28,8 +29,8 @@ const TransactionItem: React.FC<Transaction> = ({
         />
       </View>
       <View style={styles.middleColumn}>
-        <Text style={styles.concept}>{concept}</Text>
-        <Text style={styles.date}>{date}</Text>
+        <Text style={typography.primaryText}>{concept}</Text>
+        <Text style={typography.secondaryText}>{date}</Text>
       </View>
       <View style={styles.column}>
         <Text style={[styles.amount, { color: amountColor }]}>{amount}</Text>
@@ -66,17 +67,6 @@ const styles = StyleSheet.create({
   },
   cardImage: {
     resizeMode: "contain",
-  },
-  concept: {
-    fontSize: 26,
-    color: colorPalette.textPrimary,
-    fontWeight: "500",
-    flexWrap: "wrap",
-  },
-  date: {
-    fontSize: 20,
-    color: colorPalette.textSecondary,
-    flexWrap: "wrap",
   },
   amount: {
     fontSize: 26,

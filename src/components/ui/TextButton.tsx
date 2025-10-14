@@ -2,6 +2,7 @@ import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
 import { colorPalette } from "../../theme/colorPalette";
 import { TextButtonProps } from "../../types/button.types";
+import typography from "../../theme/typography";
 
 const TextButton: React.FC<TextButtonProps> = ({
   title,
@@ -11,7 +12,7 @@ const TextButton: React.FC<TextButtonProps> = ({
 }) => {
   return (
     <Pressable style={[styles.button, style]} onPress={onPress}>
-      <Text style={[styles.buttonText, textStyle]}>{title}</Text>
+      <Text style={[typography.buttonText, textStyle]}>{title}</Text>
     </Pressable>
   );
 };
@@ -24,11 +25,5 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 25,
     marginTop: 10,
-  },
-  buttonText: {
-    color: colorPalette.textPrimary,
-    fontWeight: "600",
-    fontSize: 18,
-    textAlign: "center",
   },
 });

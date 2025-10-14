@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { colorPalette } from "../../theme/colorPalette";
 import Icon from "../common/Icon";
+import typography from "../../theme/typography";
 
 const PromoCard = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -21,10 +22,14 @@ const PromoCard = () => {
         <Icon name="close" size={20} color={colorPalette.iconDefault} />
       </TouchableOpacity>
       <View style={styles.cardInfo}>
-        <Text style={styles.title} numberOfLines={2} ellipsizeMode="tail">
+        <Text
+          style={typography.primaryText}
+          numberOfLines={2}
+          ellipsizeMode="tail"
+        >
           Invite friends, earn €50
         </Text>
-        <Text style={styles.description}>Earn €50 for each frien...</Text>
+        <Text style={typography.secondaryText}>Earn €50 for each frien...</Text>
       </View>
       <Image
         style={styles.image}
@@ -54,17 +59,6 @@ const styles = StyleSheet.create({
   cardInfo: {
     flex: 1,
     padding: 16,
-  },
-  title: {
-    fontSize: 26,
-    color: colorPalette.textPrimary,
-    fontWeight: "600",
-    flexWrap: "wrap",
-  },
-  description: {
-    fontSize: 20,
-    color: colorPalette.textSecondary,
-    flexWrap: "wrap",
   },
   image: {
     width: 130,

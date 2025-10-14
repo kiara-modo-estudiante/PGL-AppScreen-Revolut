@@ -5,6 +5,7 @@ import { colorPalette } from "../../theme/colorPalette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
 import { formatBalanceParts } from "../../utils/formatBalance";
+import typography from "../../theme/typography";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -19,10 +20,10 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
     <View style={[styles.container, style]}>
       <ImageBackground source={backgroundImage} style={styles.imageBackground}>
         <View style={styles.infoContainer}>
-          <Text style={styles.description}>
+          <Text style={[typography.buttonText, styles.description]}>
             {type} · {currency}
           </Text>
-          <Text style={styles.balance}>
+          <Text style={typography.title}>
             {symbol}
             {main}
             <Text style={styles.cents}>.{cents}</Text>
@@ -67,16 +68,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   description: {
-    textAlign: "center",
     marginBottom: 10,
-    fontSize: 16,
-    color: colorPalette.textPrimary,
-  },
-  balance: {
-    textAlign: "center",
-    fontSize: 50,
-    fontWeight: "800",
-    color: colorPalette.textPrimary,
+    fontWeight: 400,
   },
   cents: {
     fontSize: 35,

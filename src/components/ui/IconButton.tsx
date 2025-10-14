@@ -3,6 +3,7 @@ import { TouchableOpacity, Text, View, StyleSheet } from "react-native";
 import { IconButtonProps } from "../../types/button.types";
 import Icon from "../common/Icon";
 import { colorPalette } from "../../theme/colorPalette";
+import typography from "../../theme/typography";
 
 const IconButton: React.FC<IconButtonProps> = ({
   icon,
@@ -27,7 +28,7 @@ const IconButton: React.FC<IconButtonProps> = ({
       >
         <Icon name={icon} size={30} color={colorPalette.iconActive}></Icon>
       </TouchableOpacity>
-      {label && <Text style={styles.label}>{label}</Text>}
+      {label && <Text style={typography.buttonText}>{label}</Text>}
     </View>
   );
 };
@@ -41,13 +42,7 @@ const styles = StyleSheet.create({
   button: {
     justifyContent: "center",
     alignItems: "center",
-  },
-  label: {
-    marginTop: 8,
-    fontSize: 16,
-    fontWeight: 600,
-    color: colorPalette.textPrimary,
-    textAlign: "center",
+    marginBottom: 5,
   },
 });
 

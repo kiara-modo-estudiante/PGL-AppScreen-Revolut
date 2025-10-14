@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { colorPalette } from "../../theme/colorPalette";
 import { IconWithLabelProps } from "../../types/icon.types";
 import Icon from "../common/Icon";
+import typography from "../../theme/typography";
 
 const IconWithLabel: React.FC<IconWithLabelProps> = ({
   name,
@@ -17,7 +18,7 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Icon name={name} size={size} color={dynamicColor} />
-      <Text style={[styles.iconLabel, { color: dynamicColor }]}>
+      <Text style={[typography.iconLabel, { color: dynamicColor }]}>
         {iconLabel}
       </Text>
     </TouchableOpacity>
@@ -29,12 +30,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-  },
-  iconLabel: {
-    textAlign: "center",
-    fontSize: 13,
-    fontWeight: "600",
-    paddingTop: 2,
   },
 });
 
