@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import BalanceCard from "../components/layout/BalanceCard";
 import { colorPalette } from "../theme/colorPalette";
 import PromoCard from "../components/layout/PromoCard";
@@ -9,15 +9,17 @@ import TransactionList from "../components/layout/TransactionList";
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <BalanceCard
-        backgroundImage={require("../assets/images/backgrounds/default.jpg")}
-        type="Savings Account"
-        currency="USD"
-        balance={145.66}
-      />
-      <ActionRow />
-      <PromoCard />
-      <TransactionList />
+      <ScrollView style={styles.scrollContent}>
+        <BalanceCard
+          backgroundImage={require("../assets/images/backgrounds/default.jpg")}
+          type="Savings Account"
+          currency="USD"
+          balance={145.66}
+        />
+        <ActionRow />
+        <PromoCard />
+        <TransactionList />
+      </ScrollView>
     </View>
   );
 };
@@ -31,5 +33,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-start",
     width: "100%",
+  },
+  scrollContent: {
+    flexGrow: 1,
   },
 });

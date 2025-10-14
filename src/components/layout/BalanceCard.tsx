@@ -48,7 +48,7 @@ export default BalanceCard;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: "55%",
+    height: 520,
     justifyContent: "center",
   },
   imageBackground: {

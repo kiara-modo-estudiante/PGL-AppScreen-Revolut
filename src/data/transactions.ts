@@ -17,4 +17,20 @@ export const transactions: Transaction[] = [
     image: require("../assets/images/debit-cards/santander-card.png"),
     isProfile: false,
   },
+  {
+    id: 3,
+    concept: "Money added via credit card",
+    date: "10 Aug, 20:12",
+    amount: "+€20",
+    image: require("../assets/images/debit-cards/bbva-card.png"),
+    isProfile: false,
+  },
+  {
+    id: 4,
+    concept: "Spotify monthly subscription",
+    date: "9 Aug, 00:02",
+    amount: "-€12",
+    image: require("../assets/images/pfp/spotify.png"),
+    isProfile: false,
+  },
 ];
