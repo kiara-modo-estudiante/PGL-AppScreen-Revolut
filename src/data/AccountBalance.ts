@@ -5,7 +5,7 @@ const balanceCards: BalanceCardProps[] = [
     backgroundImage: require("../assets/images/backgrounds/default.jpg"),
     type: "Personal",
     currency: "EUR",
-    balance: 1500.75,
+    balance: 51.1,
   },
   {
     backgroundImage: require("../assets/images/backgrounds/default.jpg"),

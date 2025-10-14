@@ -5,16 +5,17 @@ import { colorPalette } from "../theme/colorPalette";
 import PromoCard from "../components/layout/PromoCard";
 import ActionRow from "../components/layout/ActionRow";
 import TransactionList from "../components/layout/TransactionList";
+import balanceCards from "../data/accountBalance";
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollContent}>
         <BalanceCard
-          backgroundImage={require("../assets/images/backgrounds/default.jpg")}
-          type="Savings Account"
-          currency="USD"
-          balance={145.66}
+          backgroundImage={balanceCards[0].backgroundImage}
+          type={balanceCards[0].type}
+          currency={balanceCards[0].currency}
+          balance={balanceCards[0].balance}
         />
         <ActionRow />
         <PromoCard />
