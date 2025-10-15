@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <ProfilePicture
-        image={require("../../assets/images/pfp/no-profile-picture.png")}
+        image={require("../../assets/images/pfp/AH.png")}
       ></ProfilePicture>
       <SearchBar />
       <IconButton icon="chart-bar"></IconButton>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingTop: 60,
     paddingBottom: 10,
-    paddingHorizontal: 8,
+    paddingHorizontal: 14,
     position: "absolute",
     top: 0,
     zIndex: 99,
