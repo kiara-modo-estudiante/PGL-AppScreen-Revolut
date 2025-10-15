@@ -50,6 +50,10 @@ A continuación, se presentan dos capturas para comparar la pantalla original de
 
    - [02 Atomic Design](./docs/02-atomic-design.md)
 
+3. Explica, apoyándote en el código, como has realizado la implementación de algún componente propio.
+
+   - [02 Atomic Design](./docs/03-component-implementation.md)
+
 ## Autor
 
 - **Nombre:** Kiara Maldonado García
