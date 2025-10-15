@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
-import { ProfilePictureProps } from "../../types/image.types";
+import { ProfilePictureProps } from "../../types/image";
 
 const ProfilePicture: React.FC<ProfilePictureProps> = ({ image }) => {
   return <Image source={image} style={styles.image} />;
