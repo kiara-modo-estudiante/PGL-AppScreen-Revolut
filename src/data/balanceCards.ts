@@ -19,6 +19,12 @@ const balanceCards: BalanceCardProps[] = [
     currency: "GBP",
     balance: 5000.0,
   },
+  {
+    backgroundImage: require("../assets/images/backgrounds/default.jpg"),
+    type: "Crypo",
+    currency: "USD",
+    balance: 3300.0,
+  },
 ];
 
 export default balanceCards;
