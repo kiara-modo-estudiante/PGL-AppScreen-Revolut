@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import BalanceCard from "../components/layout/BalanceCard";
-import { colorPalette } from "../theme/colorPalette";
+import { colorPalette } from "../theme/color-palette";
 import PromoCard from "../components/layout/PromoCard";
 import ActionRow from "../components/layout/ActionRow";
 import TransactionList from "../components/layout/TransactionList";

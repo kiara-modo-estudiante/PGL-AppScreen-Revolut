@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import Navbar from "./src/components/layout/Navbar";
 import Header from "./src/components/layout/Header";
-import { colorPalette } from "./src/theme/colorPalette";
+import { colorPalette } from "./src/theme/color-palette";
 import HomeScreen from "./src/screens/HomeScreen";
 
 export default function App() {

@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import TransactionItem from "../ui/TransactionItem";
-import { colorPalette } from "../../theme/colorPalette";
+import { colorPalette } from "../../theme/color-palette";
 import { transactions } from "../../data/transactions";
 
 const TransactionList = () => {

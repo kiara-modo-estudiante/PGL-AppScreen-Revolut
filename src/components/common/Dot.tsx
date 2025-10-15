@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { colorPalette } from "../../theme/colorPalette";
-import { NavigationDotProps } from "../../types/accountBalance.types";
+import { colorPalette } from "../../theme/color-palette";
+import { NavigationDotProps } from "../../types/balance-card";
 
 const Dot: React.FC<NavigationDotProps> = ({ active }) => {
   return <View style={[styles.dot, active && styles.activeDot]} />;

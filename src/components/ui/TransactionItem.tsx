@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, View, Text, StyleSheet } from "react-native";
-import { colorPalette } from "../../theme/colorPalette";
-import { Transaction } from "../../types/transaction.types";
+import { colorPalette } from "../../theme/color-palette";
+import { Transaction } from "../../types/transaction";
 import typography from "../../theme/typography";
 
 const TransactionItem: React.FC<Transaction> = ({

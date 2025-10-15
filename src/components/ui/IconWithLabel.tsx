@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
-import { colorPalette } from "../../theme/colorPalette";
-import { IconWithLabelProps } from "../../types/icon.types";
+import { colorPalette } from "../../theme/color-palette";
+import { IconWithLabelProps } from "../../types/icon";
 import Icon from "../common/Icon";
 import typography from "../../theme/typography";
 

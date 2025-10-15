@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colorPalette } from "./colorPalette";
+import { colorPalette } from "./color-palette";
 
 export const typography = StyleSheet.create({
   primaryText: {

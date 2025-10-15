@@ -1,7 +1,7 @@
 import React from "react";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { svgIcons } from "../../assets/icons";
-import { IconProps } from "../../types/icon.types";
+import { IconProps } from "../../types/icon";
 
 const Icon: React.FC<IconProps> = ({ name = "default-icon", size, color }) => {
   const SvgIcon = svgIcons[name as keyof typeof svgIcons];
