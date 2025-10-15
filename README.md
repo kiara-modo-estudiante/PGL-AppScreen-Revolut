@@ -8,13 +8,51 @@ El objetivo principal es desarrollar habilidades en el diseño de interfaces mó
 
 ## Tecnologías utilizadas
 
-- **Lenguaje de programación:** React Native con Typescript.
-- **Frameworks o librerías:** ...
+- **Lenguaje de programación:** React Native con TypeScript.
+- **Frameworks o librerías:** React Navigation, Styled Components, React Native Vector Icons.
 - **IDE:** Visual Studio Code.
+- **Herramientas adicionales:** Expo CLI para la gestión del proyecto y emulación.
 
 ## Estructura del proyecto
 
----
+La estructura del proyecto sigue un esquema organizado para facilitar el desarrollo y mantenimiento del código. A continuación, se muestra un árbol de directorios representativo del src:
+
+```markdown
+src
+├── assets
+│ ├── icons
+│ └── images
+│ ├── backgrounds
+│ ├── debit-cards
+│ ├── offers
+│ └── pfp
+├── components
+│ ├── common
+│ ├── layout
+│ └── ui
+├── data
+├── screens
+├── theme
+├── types
+└── utils
+```
+
+### Explicación de la estructura
+
+- **`assets`**: Contiene recursos estáticos como íconos (`icons`) y diferentes categorías de imágenes (`images`), organizados en subcarpetas según su propósito (fondos, tarjetas de débito, ofertas, etc.).
+- **`components`**: Incluye los componentes reutilizables de la aplicación, divididos en:
+  - `common`: Componentes básicos y genéricos como `Dot`, `Icon`, y `ProfilePicture`.
+  - `layout`: Componentes relacionados con la estructura y diseño de la interfaz, como `Header`, `Navbar`, y `TransactionList`.
+  - `ui`: Componentes de interfaz de usuario específicos, como botones (`IconButton`, `TextButton`) y elementos interactivos (`SearchBar`, `PaginationDots`).
+- **`data`**: Archivos que contienen datos estáticos o simulados, como `balance-cards.ts` y `transactions.ts`.
+- **`screens`**: Define las pantallas principales de la aplicación, en este caso, `HomeScreen.tsx`.
+- **`theme`**: Contiene configuraciones relacionadas con el diseño visual, como la paleta de colores (`color-palette.ts`) y la tipografía (`typography.ts`).
+- **`types`**: Define los tipos de datos utilizados en la aplicación, organizados por entidad (`balance-card`, `button`, `icon`, etc.).
+- **`utils`**: Funciones utilitarias reutilizables, como `format-balance.ts`.
+
+Esta estructura modular facilita la escalabilidad, el mantenimiento y la colaboración en equipo, asegurando que cada parte del proyecto esté claramente delimitada y organizada.
+
+Esta estructura permite una separación clara de responsabilidades, facilitando la escalabilidad y el trabajo en equipo.
 
 ## Cómo ejecutar el proyecto
 
@@ -22,25 +60,41 @@ El objetivo principal es desarrollar habilidades en el diseño de interfaces mó
    ```bash
    git clone <URL-del-repositorio>
    ```
-2. Abre el proyecto en el IDE correspondiente.
+2. Abre el proyecto en el IDE correspondiente e instala.
+
+   ```bash
+   npm install
+   ```
 
 3. Ejecuta la aplicación en un emulador o dispositivo físico.
+   ```bash
+   npm run start
+   ```
 
 ## Comparación de Imagen y Resultado
 
 A continuación, se presentan dos capturas para comparar la pantalla original de la aplicación Revolut con el resultado obtenido en este proyecto:
 
-### Imagen Original
+## Comparación de Imagen y Resultado
 
-![Imagen Original](/docs/images/original-revolut.jpg)
+A continuación, se presentan las capturas de la pantalla original de la aplicación Revolut y el resultado obtenido en este proyecto, mostradas lado a lado para facilitar la comparación:
 
-### Resultado del Proyecto
-
-![Resultado del Proyecto](...)
+<table>
+   <tr>
+      <td align="center"><strong>Imagen Original</strong></td>
+      <td align="center"><strong>Resultado del Proyecto</strong></td>
+   </tr>
+   <tr>
+      <td align="center">
+         <img src="./docs/images/screenshots/original-revolut.jpg" alt="Imagen Original" width="300">
+      </td>
+      <td align="center">
+         <img src="./docs/images/screenshots/final-result.jpeg" alt="Resultado del Proyecto" width="300">
+      </td>
+   </tr>
+</table>
 
 ## Ejercicios de la Práctica
-
-### Ejercicios de la Práctica
 
 1. Utiliza alguna herramienta para obtener el código de cada color utilizado en la aplicación y guárdalos en un fichero de TypeScript para los colores de tu aplicación.
 
@@ -52,7 +106,11 @@ A continuación, se presentan dos capturas para comparar la pantalla original de
 
 3. Explica, apoyándote en el código, como has realizado la implementación de algún componente propio.
 
-   - [02 Atomic Design](./docs/03-component-implementation.md)
+   - [03 Component Implementation](./docs/03-component-implementation.md)
+
+4. Indica en una tabla cuáles han sido los iconos que has incorporado a tu proyecto y cómo los has implementado. Si son de la misma librería, basta con explicar la implementación de uno.
+
+   - [04 Icons](./docs/04-icons.md)
 
 ## Autor
 
