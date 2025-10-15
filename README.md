@@ -8,10 +8,25 @@ El objetivo principal es desarrollar habilidades en el diseño de interfaces mó
 
 ## Tecnologías utilizadas
 
+## Tecnologías utilizadas
+
 - **Lenguaje de programación:** React Native con TypeScript.
 - **Frameworks o librerías:** React Navigation, Styled Components, React Native Vector Icons.
 - **IDE:** Visual Studio Code.
 - **Herramientas adicionales:** Expo CLI para la gestión del proyecto y emulación.
+- **Dependencias principales:**
+  - `expo`: Framework para desarrollar aplicaciones React Native.
+  - `expo-linear-gradient`: Para crear degradados lineales.
+  - `expo-status-bar`: Para gestionar la barra de estado.
+  - `react-native-svg`: Para trabajar con gráficos vectoriales.
+- **Dependencias de desarrollo:**
+  - `typescript`: Lenguaje de programación tipado.
+  - `metro-react-native-babel-transformer`: Transformador para trabajar con SVG.
+  - `@types/react` y `@types/react-native-vector-icons`: Tipos para TypeScript.
+- **Gestión de versiones:** npm para la instalación y gestión de paquetes.
+- **Control de versiones:** Git para el seguimiento de cambios en el código.
+
+Estas tecnologías y herramientas permiten un desarrollo eficiente, organizado y escalable de la aplicación.
 
 ## Estructura del proyecto
 
@@ -58,7 +73,7 @@ Esta estructura permite una separación clara de responsabilidades, facilitando 
 
 1. Clona este repositorio:
    ```bash
-   git clone <URL-del-repositorio>
+   git clone https://github.com/kiara-modo-estudiante/PGL-AppScreen-Revolut
    ```
 2. Abre el proyecto en el IDE correspondiente e instala.
 
@@ -70,10 +85,6 @@ Esta estructura permite una separación clara de responsabilidades, facilitando 
    ```bash
    npm run start
    ```
-
-## Comparación de Imagen y Resultado
-
-A continuación, se presentan dos capturas para comparar la pantalla original de la aplicación Revolut con el resultado obtenido en este proyecto:
 
 ## Comparación de Imagen y Resultado
 
