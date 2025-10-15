@@ -4,7 +4,7 @@ import { BalanceCardProps } from "../../types/balance-card";
 import { colorPalette } from "../../theme/color-palette";
 import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
-import { formatBalanceParts } from "../../utils/formatBalance";
+import { formatBalanceParts } from "../../utils/format-balance";
 import typography from "../../theme/typography";
 import PaginationDots from "../ui/PaginationDots";
 
