@@ -46,6 +46,10 @@ A continuación, se presentan dos capturas para comparar la pantalla original de
 
    - [01 Color Palette](./docs/01-color-palette.md)
 
+2. Basándote en el principio de Atomic Design, explica cómo has organizado los elementos visuales que conforman la app en componentes core de React Native y los tuyos propios. Recuerda indicar el nombre de los componentes
+
+   - [02 Atomic Design](./docs/02-atomic-design.md)
+
 ## Autor
 
 - **Nombre:** Kiara Maldonado García
