@@ -8,7 +8,7 @@ const SearchBar: React.FC = () => {
     <View style={styles.container}>
       <MaterialCommunityIcons
         name="magnify"
-        size={30}
+        size={36}
         color={colorPalette.iconActive}
         style={styles.icon}
       />
