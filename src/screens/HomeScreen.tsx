@@ -5,7 +5,7 @@ import { colorPalette } from "../theme/color-palette";
 import PromoCard from "../components/layout/PromoCard";
 import ActionRow from "../components/layout/ActionRow";
 import TransactionList from "../components/layout/TransactionList";
-import balanceCards from "../data/balanceCards";
+import balanceCards from "../data/balance-cards";
 
 const HomeScreen = () => {
   return (

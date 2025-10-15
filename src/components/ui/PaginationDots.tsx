@@ -1,5 +1,5 @@
 import React from "react";
-import balanceCards from "../../data/balanceCards";
+import balanceCards from "../../data/balance-cards";
 import Dot from "../common/Dot";
 import { StyleSheet, View } from "react-native";
 
