@@ -12,3 +12,7 @@ export interface BalanceCardProps extends BalanceAccount {
   backgroundImage: ImageSourcePropType;
   style?: ViewStyle;
 }
+
+export interface NavigationDotProps {
+  active: boolean;
+}

@@ -6,6 +6,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import TextButton from "../ui/TextButton";
 import { formatBalanceParts } from "../../utils/formatBalance";
 import typography from "../../theme/typography";
+import PaginationDots from "../ui/PaginationDots";
 
 const BalanceCard: React.FC<BalanceCardProps> = ({
   backgroundImage,
@@ -33,6 +34,7 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             onPress={() => console.log("Accounts button pressed")}
             style={styles.button}
           />
+          <PaginationDots activeIndex={0} />
         </View>
         <LinearGradient
           colors={["transparent", colorPalette.backgroundPrimary]}
@@ -76,5 +78,6 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "30%",
+    marginBottom: 25,
   },
 });
