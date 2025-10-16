@@ -8,8 +8,6 @@ El objetivo principal es desarrollar habilidades en el diseño de interfaces mó
 
 ## Tecnologías utilizadas
 
-## Tecnologías utilizadas
-
 - **Lenguaje de programación:** React Native con TypeScript.
 - **Frameworks o librerías:** React Navigation, Styled Components, React Native Vector Icons.
 - **IDE:** Visual Studio Code.
