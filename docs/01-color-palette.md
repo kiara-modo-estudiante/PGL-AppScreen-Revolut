@@ -29,3 +29,40 @@ Aquí muestro dichos colores seleccionados a través de esta aplicación, así c
 | ![Color](/docs/images/colors/button-primary.png)       | Azul Acero      | buttonPrimary          | rgba(118, 140, 187, 0.6) |
 | ![Color](/docs/images/colors/button-hover.png)         | Azul Cobalto    | buttonHover            | rgb(75, 100, 150)        |
 | ![Color](/docs/images/colors/money-gain.png)           | Verde Esmeralda | moneyGain              | rgb(90, 183, 154)        |
+
+## Fichero de Paleta de Colores
+
+El siguiente archivo contiene la definición de la paleta de colores utilizada en la aplicación:
+
+```typescript
+// /theme/color-palette.ts
+
+export const colorPalette = {
+  // Colores de la marca
+  primary: "rgb(33, 115, 255)",
+  secondary: "rgb(28, 36, 57)",
+
+  // Fondo
+  backgroundPrimary: "rgb(2, 8, 24)",
+  backgroundSecondary: "rgb(10, 15, 35)",
+
+  // Texto
+  textPrimary: "rgb(255, 255, 255)",
+  textSecondary: "rgb(160, 160, 170)",
+
+  // Iconos
+  iconDefault: "rgb(181, 181, 187)",
+  iconActive: "rgb(255, 255, 255)",
+
+  // Botones
+  buttonPrimary: "rgba(118, 140, 187, 0.6)",
+  buttonHover: "rgb(75, 100, 150)",
+
+  // Indicadores financieros
+  moneyGain: "rgb(90, 183, 154)",
+};
+
+export default colorPalette;
+```
+
+Puedes acceder a él en: [Color Palette](../src/theme/color-palette.ts)
